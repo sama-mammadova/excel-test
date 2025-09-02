@@ -11,6 +11,5 @@ export class WelcomePage {
 
     async createWorkbook() {
         await this.createWorkbookButton.click();
-        await this.page.waitForTimeout(5000);
     }
 }

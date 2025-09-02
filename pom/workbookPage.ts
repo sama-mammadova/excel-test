@@ -1,4 +1,4 @@
-import {type FrameLocator, type Locator, type Page} from '@playwright/test';
+import {expect, type FrameLocator, type Locator, type Page} from '@playwright/test';
 import {text} from "stream/consumers";
 
 export class WorkbookPage {
@@ -23,7 +23,8 @@ export class WorkbookPage {
     }
 
     async insertFunction(functionName: string) {
-        await this.addFunctionButton.click({force: true});
+        await expect(this.addFunctionButton).toBeVisible()
+        await this.addFunctionButton.click();
         await this.functionSearchBox.click();
         await this.functionSearchBox.fill(functionName);
         let searchResult = this.workbookIframe.getByRole('gridcell', {name: functionName});

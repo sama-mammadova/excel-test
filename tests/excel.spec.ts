@@ -6,7 +6,7 @@ import {config} from 'dotenv'
 
 config()
 
-test('test', async ({page}) => {
+test('test TODAY() function', async ({page}) => {
     const signInPage = new SignInPage(page)
     await signInPage.goto()
     await signInPage.signIn(process.env.USER_EMAIL, process.env.USER_PASSWORD)

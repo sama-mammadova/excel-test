@@ -12,9 +12,11 @@ https://playwright.dev/docs/intro#system-requirements
 - `git clone https://github.com/sama-mammadova/excel-test.git`
 - `cd excel-test`
 - `npm install`
+- `npx playwright install`
 
 ## Set up env file
-- .env file should contain USER_EMAIL and USER_PASSWORD (see .env-temp file for reference). you can use test account credentials that I have sent with email
+- `cp .env.template .env`  
+- set `USER_EMAIL` and `USER_PASSWORD` values in .env file (you can use test account credentials that I have sent in email)
 
 ## Run tests 
 Run tests in headed mode to visually see how Playwright interacts with website
