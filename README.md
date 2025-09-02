@@ -33,4 +33,4 @@ Run tests in headed mode to visually see how Playwright interacts with website
 
 ## Demo recording
 You can find recording in project: 
-[test-recording.mov](video%2Ftest-recording.mov)
+[test-recording.mov](video/test-recording.mov)
