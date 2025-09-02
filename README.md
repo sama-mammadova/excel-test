@@ -23,7 +23,7 @@ Run tests in headed mode to visually see how Playwright interacts with website
 ## Challenges, my approach and alternatives
 - Iframe complexity - The Excel Online editor runs inside an iframe, requiring extra handling to locate and interact with elements
 - Canvas-based grid - Cell contents aren't in the DOM, making direct selection and text extraction difficult
-- Chosen approach - Entered the TODAY() function, downloaded the sheet as CSV and validated today's date from the file.
+- Chosen approach - Entered the TODAY() function, downloaded the sheet as CSV and validated today's date from the CSV content.
 - Why this method - Simple, fast, sufficient for task requirement and reliable compared to direct cell reads.
 - Alternative solutions could be:
     - Calculate cell coordinates on the canvas and extract text
